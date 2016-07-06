@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Problem3</title>
+</head>
+<!-- Create a program which prompts the user to enter five test scores. Then, output the average of the five test scores. -->
+<body>
+	<div>Your average test score is</div>
+	<div id="av"></div>
+	<script>
+	var t1 = parseFloat(prompt("What is your first test score?"));
+	var t2 = parseFloat(prompt("What is your second test score?"));
+	var t3 = parseFloat(prompt("What is your third test score?"));
+	var t4 = parseFloat(prompt("What is your fourth test score?"));
+	var t5 = parseFloat(prompt("What is your fifth test score?"));
+
+	var av = ((t1+t2+t3+t4+t5)/5);
+
+	document.getElementById("av").innerHTML = av;
+
+	</script>
+
+</body>
+</html>

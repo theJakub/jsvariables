@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Problem3</title>
+</head>
+<!-- The temperature T in degrees Celsius (°C) is equal to the temperature T in degrees Fahrenheit (°F) minus 32, times 5/9.
+Write a program which asks the user the temperature in celsius and displays it in Fahrenheit.
+Display the previous temperature in Kelvin also -->
+<body>
+	<div>The temperature in Celcius is</div>
+	<div id="celcius"></div>
+	<div>The temperature in Fahrenheit is </div>
+	<div id="fahr"></div>
+	<div>The temperature in Kelvin is</div>
+	<div id="kelvin"></div>
+
+	<script>
+		var t = prompt("What is the temperature in Celcius?");
+		var c = parseFloat(t);
+		var f = (c/(5/9)+32);
+		var k = (c + 273.15);
+
+		document.getElementById("celcius").innerHTML=t;
+		document.getElementById("fahr").innerHTML=f;
+		document.getElementById("kelvin").innerHTML=k;
+
+	</script>
+</body>
+</html>
